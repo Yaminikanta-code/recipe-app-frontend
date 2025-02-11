@@ -1,4 +1,4 @@
-const baseUrl = import.meta.env.VITE_BASE_URL;
+const baseUrl = import.meta.env.VITE_BASE_URL + "/";
 
 export const COMMENT_URL = {
   FETCH_RECIPE_COMMENTS: `${baseUrl}api/v1/recipes/:id/comments`,

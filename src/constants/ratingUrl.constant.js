@@ -1,4 +1,4 @@
-const baseUrl = import.meta.env.VITE_BASE_URL;
+const baseUrl = import.meta.env.VITE_BASE_URL + "/";
 
 export const RATING_URL = {
   GET_RATING_BY_RECIPE_ID: `${baseUrl}api/v1/ratings/:recipeId/user`,
