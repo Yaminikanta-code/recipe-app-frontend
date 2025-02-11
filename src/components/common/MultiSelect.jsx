@@ -14,7 +14,7 @@ function MultiSelect({
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className={`w-full max-w-sm ${className}`}>
+    <div className={`w-full ${className}`}>
       {label && (
         <label
           htmlFor={name}
