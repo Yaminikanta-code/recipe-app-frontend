@@ -68,7 +68,7 @@ function FilterHeader({ fetchFilteredRecipes }) {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 justify-center p-2 md:p-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 justify-center p-2 md:p-4 gap-2">
       <Dropdown
         name="preparationTime"
         label="filter by preparation time"
@@ -76,7 +76,7 @@ function FilterHeader({ fetchFilteredRecipes }) {
         onChangeHandler={onChangeHandler}
         control={control}
       />
-      <div>
+      <div className="flex gap-2">
         <MultiSelect
           name="ingredients"
           control={control}
