@@ -11,7 +11,7 @@ A feature-rich recipe application built using React.js with authentication, allo
 
 ### Home Page
 
-- Displays all recipes in **card format** with pagination.
+- Displays all recipes in **card format** with **pagination**.
 - **Filters:** Recipes can be filtered based on:
   - **Preparation time**
   - **Ingredients**
@@ -27,7 +27,7 @@ A feature-rich recipe application built using React.js with authentication, allo
 
 ### Profile Page
 
-- Displays all user-posted recipes in a **table format** with pagination.
+- Displays all user-posted recipes in a **table format** with **pagination**.
 - Users can **edit** or **delete** their recipes.
 - A **floating button** at the bottom right corner allows users to add new recipes.
 
