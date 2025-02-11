@@ -1,4 +1,4 @@
-const baseUrl = import.meta.env.VITE_BASE_URL + "/";
+const baseUrl = import.meta.env.VITE_BASE_URL;
 
 export const AUTH_URL = {
   LOGIN: `${baseUrl}api/v1/users/signin`,
