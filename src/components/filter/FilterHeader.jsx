@@ -68,7 +68,7 @@ function FilterHeader({ fetchFilteredRecipes }) {
   };
 
   return (
-    <div className="flex justify-center p-2 md:p-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 justify-center p-2 md:p-4">
       <Dropdown
         name="preparationTime"
         label="filter by preparation time"
@@ -76,21 +76,22 @@ function FilterHeader({ fetchFilteredRecipes }) {
         onChangeHandler={onChangeHandler}
         control={control}
       />
-
-      <MultiSelect
-        name="ingredients"
-        control={control}
-        list={ingredients}
-        placeholder="Select ingredients"
-        label="serach by ingredients"
-        onChangeHandler={(val) => {
-          handleChangeIngrident(val);
-        }}
-        className={"ml-2"}
-      />
-      <div className="mt-7 ml-2 flex gap-2">
-        <Button onClick={handleClickOnSearch}>Search</Button>
-        <Button onClick={handleClear}>Clear</Button>
+      <div>
+        <MultiSelect
+          name="ingredients"
+          control={control}
+          list={ingredients}
+          placeholder="Select ingredients"
+          label="serach by ingredients"
+          onChangeHandler={(val) => {
+            handleChangeIngrident(val);
+          }}
+          className={"ml-2"}
+        />
+        <div className="mt-7 ml-2 flex gap-2">
+          <Button onClick={handleClickOnSearch}>Search</Button>
+          <Button onClick={handleClear}>Clear</Button>
+        </div>
       </div>
     </div>
   );
