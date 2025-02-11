@@ -38,7 +38,7 @@ function MultiSelect({
             <div className="relative">
               <div
                 onClick={() => setIsOpen(!isOpen)}
-                className={`block w-full border rounded-md shadow-sm bg-background text-foreground cursor-pointer min-h-10 ${
+                className={`block w-full p-2 border rounded-md shadow-sm bg-background text-foreground cursor-pointer min-h-10 ${
                   error ? "border-destructive" : "border-input"
                 }`}
               >
