@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { hideAlert } from "../../store/alertSlice";
 
-function Alert () {
+function Alert() {
   const { message, type } = useSelector((state) => state.alert);
   const dispatch = useDispatch();
 
@@ -27,13 +27,13 @@ function Alert () {
 
   return (
     <div
-      className={`fixed top-5 right-5 p-4 rounded shadow-lg ${
+      className={`fixed top-5 right-5 p-4 rounded shadow-lg z-50 ${
         alertStyles[type] || "bg-gray-500 text-white"
       }`}
     >
       {message}
     </div>
   );
-};
+}
 
 export default Alert;
