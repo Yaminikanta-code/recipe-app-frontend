@@ -1,8 +1,61 @@
-# React + Vite
+# Recipe App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A feature-rich recipe application built using React.js with authentication, allowing users to add, edit, and delete recipes. The app includes filtering, rating, and comment functionalities, with a user-friendly interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Authentication
+
+- User authentication using JWT.
+- Persisted login sessions with `redux-persist`.
+
+### Home Page
+
+- Displays all recipes in a **card format**.
+- **Filters:** Recipes can be filtered based on:
+  - **Preparation time**
+  - **Ingredients**
+- Clicking a recipe card navigates to the **recipe detail page**.
+
+### Recipe Detail Page
+
+- Shows **recipe details**.
+- **Ratings:** Users can add one rating per recipe and edit it afterward.
+- **Comments Section:**
+  - Users can **add, edit, and delete** their own comments.
+
+### Profile Page
+
+- Displays all user-posted recipes in a **table format**.
+- Users can **edit** or **delete** their recipes.
+- A **floating button** at the bottom right corner allows users to add new recipes.
+
+## Tech Stack
+
+- **Frontend:** React.js
+- **State Management:** Redux, Redux-Persist
+- **Form Management:** React-Hook-Form
+- **Routing:** React-Router-Dom
+- **HTTP Client:** Axios
+- **Styling:** Tailwind CSS
+- **Build Tool:** Vite
+
+## Installation & Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/recipe-app.git
+   cd recipe-app
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
