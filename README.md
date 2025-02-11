@@ -11,7 +11,7 @@ A feature-rich recipe application built using React.js with authentication, allo
 
 ### Home Page
 
-- Displays all recipes in a **card format**.
+- Displays all recipes in **card format** with pagination.
 - **Filters:** Recipes can be filtered based on:
   - **Preparation time**
   - **Ingredients**
@@ -23,10 +23,11 @@ A feature-rich recipe application built using React.js with authentication, allo
 - **Ratings:** Users can add one rating per recipe and edit it afterward.
 - **Comments Section:**
   - Users can **add, edit, and delete** their own comments.
+  - Comments are displayed with infinite scrolling.
 
 ### Profile Page
 
-- Displays all user-posted recipes in a **table format**.
+- Displays all user-posted recipes in a **table format** with pagination.
 - Users can **edit** or **delete** their recipes.
 - A **floating button** at the bottom right corner allows users to add new recipes.
 
@@ -45,7 +46,7 @@ A feature-rich recipe application built using React.js with authentication, allo
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/recipe-app.git
+   git clone https://github.com/Yaminikanta-code/recipe-app-frontend.git
    cd recipe-app
    ```
 
