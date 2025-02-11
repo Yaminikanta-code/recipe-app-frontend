@@ -14,7 +14,7 @@ function Header() {
   const getFirstLetter = (name) => name.charAt(0).toUpperCase();
 
   return (
-    <MenuBar className="justify-between">
+    <MenuBar className="justify-between z-40">
       <Link to="/">
         <Logo />
       </Link>
